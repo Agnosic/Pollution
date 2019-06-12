@@ -1,0 +1,20 @@
+
+    1 + 2 * 3 - 4 / 5 + 6
+    1 + 2 + 3 + 4 + 5 + 6 * 7
+    ( (4 + 7) / 3 ) * (2 - 19)
+    17 * (31 + 4) / ( (26 - 15) * 2 - 22 ) - 1
+
+    1 2 3 * + 4 5 / - 6 +
+    1 2 + 3 + 4 + 5 + 6 7 * +
+    4 7 + 3 / 2 19 - *
+    17 31 4 + * 26 15 - 2 * 22 - / 1 -
+
+    emacs
+    python jupyter
+    chai i mocha
+
+    P = pollution:createMonitor().
+    P1 = pollution:addStation("Aleja Slowackiego", {50.2345, 18.3445}, P).
+    P2 = pollution:addValue({50.2345, 18.3445}, {{2019,3,20},{19,58,13}}, "PM10", 59, P1).
+    P3 = pollution:addValue({50.2345, 18.3445}, calendar:local_time(), "PM10", 100, P2).
+    pollution:getStationMean({50.2345,18.3445}, "PM10", P3).
